@@ -1,14 +1,13 @@
 import React from 'react'
 import TodoItem from './TodoItem'
-const styles = {
+import PropTypes from 'prop-types';
+import { ListGroup } from 'react-bootstrap'
 
-}
 
-
-const TodoList =({todos}) => {
+const TodoList =({todos, checkboxHandler}) => {
 
     return (
-        <ul style={styles}>
+        <ListGroup >
         {
             todos.map((todo, idx)=>{
                 return (
@@ -16,12 +15,19 @@ const TodoList =({todos}) => {
                         todoItem={todo}
                         key={todo.id}
                         idx={idx}
+                        checkboxHandler={checkboxHandler}
                     />
                 )
             })
         }
-        </ul>
+        </ListGroup>
     )
+}
+
+TodoList.propTypes = {
+    todos: PropTypes.arrayOf(PropTypes.object),
+    checkboxHandler: PropTypes.func.isRequired,
+
 }
 
 export default TodoList
