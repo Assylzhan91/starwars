@@ -3,6 +3,7 @@ import TodoList from './Todo';
 import Preloader from './Preloader/';
 import Modal from './Modal';
 import { Context } from './context';
+<<<<<<< HEAD
 import AddTodo from './AddTodo';
 
 import app from './App.module.css';
@@ -12,6 +13,15 @@ import app from './App.module.css';
         resolve(import('./AddTodo'))
     }, 1000)
 }))*/
+=======
+import app from './App.module.css';
+
+const  AddTodo = lazy(()=>new Promise(resolve => {
+    setTimeout(()=>{
+        resolve(import('./AddTodo'))
+    }, 1000)
+}))
+>>>>>>> 6bb7c44ebb3d968becc41a339c2ffd0d92df5422
 
 function App() {
 
@@ -64,9 +74,15 @@ function App() {
                 {
                     preloader
                     ? <div className={app['wrapper-center']}><Preloader/></div>
+<<<<<<< HEAD
                     :   /*<Suspense fallback={<p>Loading....</p>}>*/
                             <AddTodo/>
                         /*</Suspense>*/
+=======
+                    :   <Suspense fallback={<p>Loading....</p>}>
+                            <AddTodo/>
+                        </Suspense>
+>>>>>>> 6bb7c44ebb3d968becc41a339c2ffd0d92df5422
                  }
                 <div className={preloader?  `${app.center}` : null}>
                 {
