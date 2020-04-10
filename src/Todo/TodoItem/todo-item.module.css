@@ -1,0 +1,25 @@
+.li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.input{
+    margin-right: 1rem;
+}
+
+.strong{
+    text-transform: capitalize;
+}
+
+.span{
+    text-decoration: line-through;
+}
+
+.wrapper{
+    background-color: #f2ffbe;
+}
