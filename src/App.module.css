@@ -32,19 +32,5 @@ code {
   }
 }
 .wrapper{
-  padding-top: 5rem;
-  margin: auto;
-  width: 600px;
-}
-.mainTitle{
-  margin-bottom: 2rem;
-}
 
-.center,
-.wrapper-center{
-  display: flex;
-}
-
-.center{
-  display: flex;
 }

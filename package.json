@@ -1,5 +1,5 @@
 {
-  "name": "react-youtube-01",
+  "name": "bura-2020",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -67,7 +67,7 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "set PORT=3008 && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
